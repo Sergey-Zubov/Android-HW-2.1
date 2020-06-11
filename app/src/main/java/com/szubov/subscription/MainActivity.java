@@ -42,7 +42,13 @@ public class MainActivity extends AppCompatActivity {
         btnClear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                TextView txtSubCompleted = findViewById(R.id.subCompleted);
+                EditText uName = findViewById(R.id.editName);
+                EditText uEmail = findViewById(R.id.editEmail);
 
+                uName.getText().clear();
+                uEmail.getText().clear();
+                txtSubCompleted.setText("");
             }
         });
     }
