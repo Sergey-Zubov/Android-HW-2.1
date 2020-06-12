@@ -21,14 +21,13 @@ public class MainActivity extends AppCompatActivity {
     private void init() {
         Button btnOk = findViewById(R.id.btnOk);
         Button btnClear = findViewById(R.id.btnClear);
+        final TextView txtSubCompleted = findViewById(R.id.subCompleted);
+        final EditText uName = findViewById(R.id.editName);
+        final EditText uEmail = findViewById(R.id.editEmail);
 
         btnOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView txtSubCompleted = findViewById(R.id.subCompleted);
-                EditText uName = findViewById(R.id.editName);
-                EditText uEmail = findViewById(R.id.editEmail);
-
                 String inputName = uName.getText().toString();
                 String inputEmail = uEmail.getText().toString();
 
@@ -44,10 +43,6 @@ public class MainActivity extends AppCompatActivity {
         btnClear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView txtSubCompleted = findViewById(R.id.subCompleted);
-                EditText uName = findViewById(R.id.editName);
-                EditText uEmail = findViewById(R.id.editEmail);
-
                 uName.getText().clear();
                 uEmail.getText().clear();
                 txtSubCompleted.setText("");
