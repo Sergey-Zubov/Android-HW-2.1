@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 String inputName = uName.getText().toString();
                 String inputEmail = uEmail.getText().toString();
 
-                if (!inputName.equals("") && !inputEmail.equals("")) {
+                if (!inputName.isEmpty() && !inputEmail.isEmpty()) {
                     String subMessage = getString(R.string.sub_message, inputName, inputEmail);
                     txtSubCompleted.setText(subMessage);
                 }
