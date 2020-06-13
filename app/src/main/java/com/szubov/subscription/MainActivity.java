@@ -32,9 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 String inputEmail = uEmail.getText().toString();
 
                 if (!inputName.equals("") && !inputEmail.equals("")) {
-                    String subMessage = "Подписка на рассылку успешно оформлена для пользователя "
-                            + inputName + " на электронный адрес " + inputEmail;
-
+                    String subMessage = getString(R.string.sub_message, inputName, inputEmail);
                     txtSubCompleted.setText(subMessage);
                 }
             }

@@ -6,4 +6,6 @@
     <string name="btn_clear">Очистить</string>
     <string name="edit_name">Имя</string>
     <string name="edit_email">Почта</string>
+    <string name="sub_message">Подписка на рассылку успешно
+        оформлена для пользователя %s на электронный адрес %s</string>
 </resources>
